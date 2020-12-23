@@ -17,8 +17,9 @@ body {
   font-size: 1.6rem;
 }
 body .main {
-  max-width: 1800px;
+  max-width: auto;
   height: 100vh;
+  min-height: 100vh;
   background-image: url(../img/FONDDESKTOP2.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,20 +27,124 @@ body .main {
   margin: 0 auto;
   position: relative;
 }
-@media screen and (max-width: 990px) {
+@media screen and (min-width: 575px) and (max-width: 990px) {
   body .main {
-    width: 990px;
-    height: 100vh;
+    width: auto;
+    height: 120vh;
     background-image: url(../img/FONDTABLETTE.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  }
+  body .main header {
+    padding: 1rem 0;
+    max-width: 990px;
+    height: 25vh;
+    justify-content: space-around;
+    position: relative;
+  }
+  body .main header img {
+    width: 18rem;
+    height: 18rem;
+    border: 2px solid #5998C5;
+    border-radius: 15rem;
+  }
+  body .main header .title {
+    display: flex;
+    width: 31rem;
+    height: 10rem;
+    flex-direction: column;
+    padding: 1rem 0;
+    background-color: white;
+    border-radius: 1rem;
+    margin: 0;
+  }
+  body .main header .title h1 {
+    width: 30rem;
+    font-size: 3rem;
+    color: Rgb(0, 23, 31);
+    margin: 0;
+  }
+  body .main header .title h2 {
+    width: 30rem;
+    font-size: 3rem;
+    color: #5998C5;
+    margin: 0;
+  }
+  body .main header a {
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    font-size: 3rem;
+  }
+  body .main header .blank {
+    display: none;
+  }
+  body .main .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75vh;
+  }
+  body .main .center .codec {
+    height: 50%;
+    width: auto;
+    padding-left: 5rem;
+  }
+  body .main .center .codec code {
+    font-size: 2rem;
+    line-height: 20px;
+    color: #5998C5;
+  }
+  body .main .center .hero {
+    align-self: flex-end;
+    margin: 3rem 5rem;
+    height: 40rem;
+    width: 45rem;
+  }
+  body .main .center .hero p {
+    font-size: 2rem;
+  }
+  body .main .center .hero p span {
+    font-weight: 500;
+  }
+  body .main .center .hero a {
+    align-self: center;
+    padding: 0;
+    margin: 1rem;
+    text-decoration: none;
+    width: 25rem;
+    height: 5rem;
+    background-color: #5998C5;
+    color: white;
+    text-align: center;
+  }
+  body .main .center .hero a p {
+    margin: 0;
+    padding: 1.5rem;
+  }
+  body .main .center .blank {
+    display: none;
+  }
+  body .main footer {
+    max-width: auto;
+  }
+  body .main footer .btns {
+    bottom: 0;
+    margin-top: 5.5rem;
+  }
+  body .main footer .btns a {
+    margin: 0 5rem;
+  }
+  body .main footer .btns a i {
+    font-size: 5rem;
+    color: #EBEBEB;
+  }
+  body .main footer img {
+    display: none;
   }
 }
 @media screen and (max-width: 575px) {
   body .main {
-    width: 100%;
+    height: 125vh;
+    width: auto;
     background-image: url(../img/FONDTABLETTE.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,9 +152,10 @@ body .main {
     background-attachment: fixed;
   }
   body .main header {
-    padding: 1rem 1.5rem;
-    width: 100%;
+    padding: 1rem 2rem;
+    max-width: auto;
     height: 20vh;
+    position: relative;
   }
   body .main header img {
     width: 12rem;
@@ -59,47 +165,112 @@ body .main {
   }
   body .main header .title {
     display: flex;
-    width: 50%;
+    width: 55%;
+    height: 7rem;
     flex-direction: column;
-    padding: 3rem 0;
+    padding: 1rem 0;
+    background-color: white;
+    border-radius: 1rem;
     margin: 0;
   }
   body .main header .title h1 {
+    width: 20rem;
     font-size: 2rem;
-    color: #5998C5;
+    color: Rgb(0, 23, 31);
     margin: 0;
   }
   body .main header .title h2 {
+    width: 20rem;
     font-size: 2rem;
     color: #5998C5;
     margin: 0;
   }
   body .main header a {
+    position: absolute;
+    top: -2rem;
+    left: -6rem;
+    font-size: 2.5rem;
+  }
+  body .main header .blank {
     display: none;
   }
   body .main .center {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 50vh;
+    align-items: center;
+    height: 80vh;
   }
   body .main .center .codec {
-    width: 50%;
-    display: flex;
+    height: 50%;
+    width: auto;
   }
   body .main .center .codec code {
-    padding: 3.5rem 0 2rem 3.5rem;
+    padding: 0;
+    margin: 0.5rem 2rem 0 2rem;
     font-family: Source Code Pro;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: #5998C5;
   }
   body .main .center .codec code span {
     color: Rgb(0, 23, 31);
   }
+  body .main .center .hero {
+    margin: 3rem 2rem;
+    height: 40rem;
+    width: 35rem;
+    background-color: #FFFFFF;
+    border: solid #5998C5 1.5px;
+    border-radius: 2rem;
+    flex-direction: column;
+    font-family: Montserrat;
+    font-size: 1.8rem;
+    color: #5998C5;
+    padding: 1rem;
+  }
+  body .main .center .hero p {
+    text-align: center;
+  }
+  body .main .center .hero p span {
+    font-weight: 500;
+  }
+  body .main .center .hero a {
+    align-self: center;
+    padding: 0;
+    margin: 1rem;
+    text-decoration: none;
+    width: 22rem;
+    height: 5rem;
+    background-color: #5998C5;
+    color: white;
+    text-align: center;
+  }
+  body .main .center .hero a p {
+    margin: 0;
+    padding: 1.5rem;
+  }
   body .main .center .blank {
+    display: none;
+  }
+  body .main footer {
+    max-width: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  body .main footer .btns {
+    bottom: 0;
+    margin-top: 5.5rem;
+  }
+  body .main footer .btns a {
+    margin: 0 1rem;
+  }
+  body .main footer .btns a i {
+    color: white;
+  }
+  body .main footer img {
     display: none;
   }
 }
@@ -109,6 +280,7 @@ body header {
   justify-content: space-between;
   align-items: center;
   height: 30vh;
+  position: relative;
 }
 body header img {
   width: 20rem;
@@ -121,7 +293,6 @@ body header .title {
   height: 13.8rem;
   align-items: center;
   text-align: center;
-  margin-right: 10%;
 }
 body header .title h1 {
   font-family: Source Code Pro;
@@ -140,8 +311,16 @@ body header .title h2 {
   margin: 5px;
 }
 body header a {
-  margin-bottom: 8.5%;
-  font-size: 2.2rem;
+  position: absolute;
+  text-decoration: none;
+  top: 0;
+  left: 0;
+  margin-top: 3.7rem;
+  margin-left: 17rem;
+  font-size: 3.5rem;
+}
+body header .blank {
+  width: 20rem;
 }
 body .center {
   display: flex;
@@ -168,8 +347,8 @@ body .center .codec code span {
 }
 body .center .hero {
   display: flex;
-  width: 45%;
-  max-height: 100%;
+  width: 56rem;
+  max-height: 42rem;
   background-color: #FFFFFF;
   border: solid #5998C5 1.5px;
   border-radius: 2rem;
@@ -186,7 +365,7 @@ body .center .hero a {
   align-self: center;
   margin: 1rem;
   text-decoration: none;
-  width: 50%;
+  width: 25rem;
   height: 5rem;
   background-color: #5998C5;
   color: white;
@@ -198,7 +377,7 @@ body .center .hero a p {
   font-family: Source Code Pro;
 }
 body .center .blank {
-  width: 45rem;
+  width: 43rem;
 }
 body footer {
   width: 100%;
@@ -207,8 +386,7 @@ body footer {
   height: 20vh;
 }
 body footer .btns {
-  bottom: 0;
-  margin-top: 3.4rem;
+  margin-top: 3rem;
 }
 body footer .btns a {
   margin: 0 4rem;

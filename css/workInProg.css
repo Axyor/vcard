@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+
+.main {
+  padding: 1rem;
+  height: 100vh;
+  background-color: #5998C5;
+}
+.main h1 {
+  margin: 0;
+  color: white;
+  font-family: Source Code Pro;
+}
+
+/*# sourceMappingURL=workInProg.css.map */
