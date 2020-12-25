@@ -13,6 +13,7 @@ html {
 }
 
 body {
+  width: auto;
   margin: 0;
   font-size: 1.6rem;
 }
@@ -27,10 +28,10 @@ body .main {
   margin: 0 auto;
   position: relative;
 }
-@media screen and (min-width: 575px) and (max-width: 990px) {
+@media screen and (min-width: 575px) and (max-width: 990px) and (orientation: portrait) {
   body .main {
     width: auto;
-    height: 120vh;
+    height: auto;
     background-image: url(../img/FONDTABLETTE.svg);
   }
   body .main header {
@@ -40,11 +41,23 @@ body .main {
     justify-content: space-around;
     position: relative;
   }
-  body .main header img {
+  body .main header .img-profil {
     width: 18rem;
     height: 18rem;
-    border: 2px solid #5998C5;
+    position: relative;
+  }
+  body .main header .img-profil img {
+    height: 100%;
+    width: 100%;
     border-radius: 15rem;
+    border: 2px solid #5998C5;
+    position: absolute;
+  }
+  body .main header .img-profil a {
+    position: absolute;
+    top: 0;
+    left: 13rem;
+    font-size: 3rem;
   }
   body .main header .title {
     display: flex;
@@ -68,12 +81,6 @@ body .main {
     color: #5998C5;
     margin: 0;
   }
-  body .main header a {
-    position: absolute;
-    top: 0;
-    left: 3rem;
-    font-size: 3rem;
-  }
   body .main header .blank {
     display: none;
   }
@@ -96,7 +103,7 @@ body .main {
   body .main .center .hero {
     align-self: flex-end;
     margin: 3rem 5rem;
-    height: 40rem;
+    height: auto;
     width: 45rem;
   }
   body .main .center .hero p {
@@ -109,6 +116,7 @@ body .main {
     align-self: center;
     padding: 0;
     margin: 1rem;
+    margin-left: 20%;
     text-decoration: none;
     width: 25rem;
     height: 5rem;
@@ -141,27 +149,37 @@ body .main {
     display: none;
   }
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 575px) and (orientation: portrait) {
   body .main {
-    height: 125vh;
+    height: auto;
     width: auto;
     background-image: url(../img/FONDTABLETTE.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
   }
   body .main header {
     padding: 1rem 2rem;
-    max-width: auto;
-    height: 20vh;
+    width: auto;
+    height: 20%;
     position: relative;
   }
-  body .main header img {
+  body .main header .img-profil {
     width: 12rem;
     height: 12rem;
-    border: 1px solid #5998C5;
+    position: relative;
+  }
+  body .main header .img-profil img {
+    height: 100%;
+    width: 100%;
     border-radius: 15rem;
+    border: 2px solid #5998C5;
+  }
+  body .main header .img-profil a {
+    position: absolute;
+    top: 0;
+    left: 8rem;
+    font-size: 2.5rem;
   }
   body .main header .title {
     display: flex;
@@ -185,12 +203,6 @@ body .main {
     color: #5998C5;
     margin: 0;
   }
-  body .main header a {
-    position: absolute;
-    top: -2rem;
-    left: -6rem;
-    font-size: 2.5rem;
-  }
   body .main header .blank {
     display: none;
   }
@@ -198,15 +210,15 @@ body .main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    height: 80%;
   }
   body .main .center .codec {
-    height: 50%;
+    height: 25rem;
     width: auto;
   }
   body .main .center .codec code {
     padding: 0;
-    margin: 0.5rem 2rem 0 2rem;
+    margin: 0rem 2rem 0 2rem;
     font-family: Source Code Pro;
     font-style: normal;
     font-weight: normal;
@@ -218,8 +230,8 @@ body .main {
     color: Rgb(0, 23, 31);
   }
   body .main .center .hero {
-    margin: 3rem 2rem;
-    height: 40rem;
+    margin: 2rem 2rem;
+    height: auto;
     width: 35rem;
     background-color: #FFFFFF;
     border: solid #5998C5 1.5px;
@@ -240,6 +252,7 @@ body .main {
     align-self: center;
     padding: 0;
     margin: 1rem;
+    margin-left: 17%;
     text-decoration: none;
     width: 22rem;
     height: 5rem;
@@ -276,17 +289,30 @@ body .main {
 }
 body header {
   display: flex;
-  padding: 3.5rem;
+  padding: 1rem 3rem;
   justify-content: space-between;
   align-items: center;
-  height: 30vh;
+  height: 32vh;
   position: relative;
 }
-body header img {
+body header .img-profil {
   width: 20rem;
   height: 20rem;
-  border: 1.5px solid #E5E5E5;
+  position: relative;
+}
+body header .img-profil img {
+  height: 100%;
+  width: 100%;
   border-radius: 15rem;
+  border: 1.5px solid #E5E5E5;
+  position: absolute;
+}
+body header .img-profil a {
+  position: absolute;
+  text-decoration: none;
+  top: 0;
+  left: 15rem;
+  font-size: 3.5rem;
 }
 body header .title {
   width: 40rem;
@@ -310,26 +336,18 @@ body header .title h2 {
   color: white;
   margin: 5px;
 }
-body header a {
-  position: absolute;
-  text-decoration: none;
-  top: 0;
-  left: 0;
-  margin-top: 3.7rem;
-  margin-left: 17rem;
-  font-size: 3.5rem;
-}
 body header .blank {
   width: 20rem;
 }
 body .center {
   display: flex;
   justify-content: space-between;
-  height: 50vh;
+  align-items: center;
+  height: 45vh;
 }
 body .center .codec {
   width: 46rem;
-  height: 3.2rem;
+  height: 32rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -346,9 +364,8 @@ body .center .codec code span {
   color: Rgb(0, 23, 31);
 }
 body .center .hero {
-  display: flex;
   width: 56rem;
-  max-height: 42rem;
+  height: auto;
   background-color: #FFFFFF;
   border: solid #5998C5 1.5px;
   border-radius: 2rem;
@@ -362,8 +379,9 @@ body .center .hero p span {
   font-weight: 500;
 }
 body .center .hero a {
-  align-self: center;
+  display: block;
   margin: 1rem;
+  margin-left: 22%;
   text-decoration: none;
   width: 25rem;
   height: 5rem;

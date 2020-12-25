@@ -18,7 +18,7 @@ html {
 }
 
 body{
-
+    width: auto;
     margin: 0;
     font-size: 1.6rem;
 
@@ -37,12 +37,12 @@ body{
         
     }
     
-@media screen and (min-width:575px) and (max-width:990px){
+@media screen and (min-width:575px) and (max-width:990px) and (orientation : portrait) {
 
     .main{
 
         width: auto;
-        height: 120vh;
+        height: auto;
         background-image: url(../img/FONDTABLETTE.svg);
 
         header {
@@ -51,11 +51,26 @@ body{
             height: 25vh;
             justify-content: space-around;
             position:relative;
-            img{
+
+            .img-profil{
                 width: 18rem;
                 height: 18rem;
-                border: 2px solid  #5998C5;
-                border-radius: 15rem;
+               position: relative;
+                
+                img{
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 15rem;
+                     border: 2px solid  #5998C5;
+                     position: absolute;
+                }
+                a{
+                position:absolute;
+                top:0;
+                left: 13rem;
+                font-size: 3rem;
+                }
+
             }
             .title{
                 display: flex;
@@ -83,13 +98,7 @@ body{
 
             }
 
-            a{
-                position:absolute;
-                top:0;
-                left:3rem;
-                font-size: 3rem;
-                  
-            }
+            
 
             .blank{
                 display: none;
@@ -122,7 +131,7 @@ body{
 
                 align-self: flex-end;
                 margin: 3rem 5rem;
-                height: 40rem;
+                height: auto;
                 width:45rem;
                
                 p{
@@ -141,6 +150,7 @@ body{
                     align-self: center;
                     padding: 0;
                     margin: 1rem;
+                    margin-left: 20%;
                     text-decoration: none;
                     width: 25rem;
                     height: 5rem;
@@ -194,31 +204,44 @@ body{
     }
 }
     
-@media screen and (max-width:575px){
+@media screen and (max-width:575px)and (orientation : portrait){
     .main{
 
-        height: 125vh;
+        height: auto;
         width: auto;
         background-image: url(../img/FONDTABLETTE.svg);
         background-repeat: no-repeat;
         background-size:  cover;
         background-position: center;
-        background-attachment: fixed;
+        
         
         header {
             
             padding : 1rem 2rem;
-            max-width: auto;
-            height: 20vh;
+            width: auto;
+            height: 20%;
             position: relative;
             
-            img{
+            .img-profil{
                 
                 width: 12rem;
                 height: 12rem;
-                border: 1px solid  #5998C5;
-                border-radius: 15rem;
-
+                position: relative;
+                
+                img{
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 15rem;
+                    border: 2px solid  #5998C5;
+                    
+                }
+                a{
+                position: absolute;
+                top:0;
+                left: 8rem;
+                font-size: 2.5rem;
+                  
+            }
             }
 
             .title{
@@ -252,13 +275,7 @@ body{
 
             }
             
-            a{
-                position: absolute;
-                top:-2rem;
-                left: -6rem;
-                font-size: 2.5rem;
-                  
-            }
+            
 
             .blank{
 
@@ -273,17 +290,17 @@ body{
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 80vh;
+            height: 80%;
 
             .codec{
 
-                height: 50%;
+                height: 25rem;
                 width: auto;
             
                 code{
                 
                     padding: 0 ;
-                    margin: 0.5rem 2rem 0 2rem;
+                    margin: 0rem 2rem 0 2rem;
                     font-family: Source Code Pro;
                     font-style: normal;
                     font-weight: normal;
@@ -301,8 +318,8 @@ body{
 
             .hero{
 
-                margin: 3rem 2rem;
-                height: 40rem;
+                margin: 2rem 2rem;
+                height: auto;
                 width:35rem;
                 background-color: #FFFFFF;
                 border: solid #5998C5 1.5px;
@@ -327,6 +344,7 @@ body{
                     align-self: center;
                     padding: 0;
                     margin: 1rem;
+                    margin-left: 17%;
                     text-decoration: none;
                     width: 22rem;
                     height: 5rem;
@@ -390,21 +408,37 @@ body{
 }
 
         header {
-
+           
             display: flex;
-            padding : 3.5rem;
+            padding : 1rem 3rem;
             justify-content: space-between;
             align-items: center;
-            height: 30vh;
+            height: 32vh;
             position: relative;
 
-            img{
+            .img-profil{
                 
                 width: 20rem;
                 height: 20rem;
-                border: 1.5px solid #E5E5E5;
-                border-radius: 15rem;
-
+                position: relative;
+                
+                img{
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 15rem;
+                    border: 1.5px solid #E5E5E5;
+                    position: absolute;
+                }
+                a{
+                
+                position: absolute;
+                text-decoration: none;
+                top:0;
+                left:15rem;
+            
+                font-size: 3.5rem;
+                
+            }
             }
 
             .title{
@@ -438,17 +472,7 @@ body{
 
             }
             
-            a{
-                
-                position: absolute;
-                text-decoration: none;
-                top:0;
-                left:0;
-                margin-top: 3.7rem;
-                margin-left: 17rem;
-                font-size: 3.5rem;
-                
-            }
+            
 
             .blank{
 
@@ -462,12 +486,13 @@ body{
 
         display: flex;
         justify-content: space-between;
-        height: 50vh;
+        align-items: center;
+        height: 45vh;
 
         .codec{
 
             width: 46rem;
-            height: 3.2rem;
+            height: 32rem;
             display: flex;
             flex-wrap: wrap;
         
@@ -491,9 +516,9 @@ body{
         }
         .hero{
 
-            display: flex;
+            
             width:56rem;
-            max-height: 42rem;
+            height: auto;
             background-color: #FFFFFF;
             border: solid #5998C5 1.5px;
             border-radius: 2rem;
@@ -514,9 +539,10 @@ body{
             }
 
             a{
-
-                align-self: center;
+                
+                display: block;
                 margin: 1rem;
+                margin-left: 22%;
                 text-decoration: none;
                 width: 25rem;
                 height: 5rem;
