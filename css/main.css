@@ -11,13 +11,13 @@
 html {
   font-size: 62.5%;
 }
-
-body {
+html body {
   width: auto;
   margin: 0;
   font-size: 1.6rem;
 }
-body .main {
+
+.main {
   max-width: auto;
   height: 100vh;
   min-height: 100vh;
@@ -28,38 +28,178 @@ body .main {
   margin: 0 auto;
   position: relative;
 }
+.main header {
+  display: flex;
+  padding: 1rem 3rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 32vh;
+  position: relative;
+}
+.main header .img-profil {
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+}
+.main header .img-profil img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15rem;
+  border: 1.5px solid #e5e5e5;
+  position: absolute;
+}
+.main header .img-profil a {
+  position: absolute;
+  text-decoration: none;
+  top: 0;
+  left: 15rem;
+  font-size: 3.5rem;
+}
+.main header .title {
+  width: 40rem;
+  height: 13.8rem;
+  align-items: center;
+  text-align: center;
+}
+.main header .title h1 {
+  font-family: Source Code Pro;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.6rem;
+  color: #ebebeb;
+  margin: 0;
+}
+.main header .title h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.6rem;
+  color: white;
+  margin: 5px;
+}
+.main header .blank {
+  width: 20rem;
+}
+.main .center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45vh;
+}
+.main .center .codec {
+  width: 46rem;
+  height: 32rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .center .codec code {
+  padding: 3.5rem 0 2rem 3.5rem;
+  font-family: Source Code Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.main .center .codec code span {
+  color: Rgb(0, 23, 31);
+}
+.main .center .hero {
+  width: 56rem;
+  height: auto;
+  background-color: #ffffff;
+  border: solid #5998c5 1.5px;
+  border-radius: 2rem;
+  flex-direction: column;
+  font-family: Montserrat;
+  font-size: 2rem;
+  color: #5998c5;
+  padding: 2rem;
+}
+.main .center .hero p span {
+  font-weight: 500;
+}
+.main .center .hero a {
+  display: block;
+  margin: 1rem;
+  margin-left: 22%;
+  text-decoration: none;
+  width: 25rem;
+  height: 5rem;
+  background-color: #5998c5;
+  color: white;
+  text-align: center;
+}
+.main .center .hero a p {
+  margin: 0;
+  padding: 1rem;
+  font-family: Source Code Pro;
+}
+.main .center .blank {
+  width: 43rem;
+}
+.main footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+}
+.main footer .btns {
+  margin-top: 3rem;
+}
+.main footer .btns a {
+  margin: 0 4rem;
+}
+.main footer .btns a i {
+  text-decoration: none;
+  color: #5998c5;
+  padding: 1rem;
+  font-size: 4.5rem;
+}
+.main footer img {
+  bottom: 0;
+  right: 0;
+  width: 26%;
+  position: absolute;
+}
+
 @media screen and (min-width: 575px) and (max-width: 990px) and (orientation: portrait) {
-  body .main {
+  .main {
     width: auto;
     height: auto;
     background-image: url(../img/FONDTABLETTE.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    position: relative;
   }
-  body .main header {
+  .main header {
     padding: 1rem 0;
     max-width: 990px;
     height: 25vh;
     justify-content: space-around;
     position: relative;
   }
-  body .main header .img-profil {
+  .main header .img-profil {
     width: 18rem;
     height: 18rem;
     position: relative;
   }
-  body .main header .img-profil img {
+  .main header .img-profil img {
     height: 100%;
     width: 100%;
     border-radius: 15rem;
-    border: 2px solid #5998C5;
+    border: 2px solid #5998c5;
     position: absolute;
   }
-  body .main header .img-profil a {
+  .main header .img-profil a {
     position: absolute;
     top: 0;
     left: 13rem;
     font-size: 3rem;
   }
-  body .main header .title {
+  .main header .title {
     display: flex;
     width: 31rem;
     height: 10rem;
@@ -69,50 +209,50 @@ body .main {
     border-radius: 1rem;
     margin: 0;
   }
-  body .main header .title h1 {
+  .main header .title h1 {
     width: 30rem;
     font-size: 3rem;
     color: Rgb(0, 23, 31);
     margin: 0;
   }
-  body .main header .title h2 {
+  .main header .title h2 {
     width: 30rem;
     font-size: 3rem;
-    color: #5998C5;
+    color: #5998c5;
     margin: 0;
   }
-  body .main header .blank {
+  .main header .blank {
     display: none;
   }
-  body .main .center {
+  .main .center {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 75vh;
+    height: 70vh;
   }
-  body .main .center .codec {
+  .main .center .codec {
     height: 50%;
     width: auto;
     padding-left: 5rem;
   }
-  body .main .center .codec code {
+  .main .center .codec code {
     font-size: 2rem;
     line-height: 20px;
-    color: #5998C5;
+    color: #5998c5;
   }
-  body .main .center .hero {
+  .main .center .hero {
     align-self: flex-end;
     margin: 3rem 5rem;
     height: auto;
     width: 45rem;
   }
-  body .main .center .hero p {
+  .main .center .hero p {
     font-size: 2rem;
   }
-  body .main .center .hero p span {
+  .main .center .hero p span {
     font-weight: 500;
   }
-  body .main .center .hero a {
+  .main .center .hero a {
     align-self: center;
     padding: 0;
     margin: 1rem;
@@ -120,68 +260,70 @@ body .main {
     text-decoration: none;
     width: 25rem;
     height: 5rem;
-    background-color: #5998C5;
+    background-color: #5998c5;
     color: white;
     text-align: center;
   }
-  body .main .center .hero a p {
+  .main .center .hero a p {
     margin: 0;
     padding: 1.5rem;
   }
-  body .main .center .blank {
+  .main .center .blank {
     display: none;
   }
-  body .main footer {
+  .main footer {
     max-width: auto;
   }
-  body .main footer .btns {
+  .main footer .btns {
     bottom: 0;
     margin-top: 5.5rem;
   }
-  body .main footer .btns a {
+  .main footer .btns a {
     margin: 0 5rem;
   }
-  body .main footer .btns a i {
+  .main footer .btns a i {
     font-size: 5rem;
-    color: #EBEBEB;
+    color: #ebebeb;
   }
-  body .main footer img {
+  .main footer img {
     display: none;
   }
 }
 @media screen and (max-width: 575px) and (orientation: portrait) {
-  body .main {
+  .main {
     height: auto;
     width: auto;
     background-image: url(../img/FONDTABLETTE.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  }
-  body .main header {
-    padding: 1rem 2rem;
-    width: auto;
-    height: 20%;
+    margin: 0 auto;
     position: relative;
   }
-  body .main header .img-profil {
+  .main header {
+    padding: 1rem 2rem;
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+  .main header .img-profil {
     width: 12rem;
     height: 12rem;
     position: relative;
   }
-  body .main header .img-profil img {
+  .main header .img-profil img {
     height: 100%;
     width: 100%;
     border-radius: 15rem;
-    border: 2px solid #5998C5;
+    border: 2px solid #5998c5;
   }
-  body .main header .img-profil a {
+  .main header .img-profil a {
     position: absolute;
     top: 0;
     left: 8rem;
     font-size: 2.5rem;
   }
-  body .main header .title {
+  .main header .title {
     display: flex;
     width: 55%;
     height: 7rem;
@@ -191,32 +333,33 @@ body .main {
     border-radius: 1rem;
     margin: 0;
   }
-  body .main header .title h1 {
+  .main header .title h1 {
     width: 20rem;
     font-size: 2rem;
     color: Rgb(0, 23, 31);
     margin: 0;
   }
-  body .main header .title h2 {
+  .main header .title h2 {
     width: 20rem;
     font-size: 2rem;
-    color: #5998C5;
+    color: #5998c5;
     margin: 0;
   }
-  body .main header .blank {
+  .main header .blank {
     display: none;
   }
-  body .main .center {
+  .main .center {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 80%;
+    overflow-y: auto;
   }
-  body .main .center .codec {
+  .main .center .codec {
     height: 25rem;
     width: auto;
   }
-  body .main .center .codec code {
+  .main .center .codec code {
     padding: 0;
     margin: 0rem 2rem 0 2rem;
     font-family: Source Code Pro;
@@ -224,31 +367,31 @@ body .main {
     font-weight: normal;
     font-size: 18px;
     line-height: 20px;
-    color: #5998C5;
+    color: #5998c5;
   }
-  body .main .center .codec code span {
+  .main .center .codec code span {
     color: Rgb(0, 23, 31);
   }
-  body .main .center .hero {
+  .main .center .hero {
     margin: 2rem 2rem;
     height: auto;
     width: 35rem;
-    background-color: #FFFFFF;
-    border: solid #5998C5 1.5px;
+    background-color: #ffffff;
+    border: solid #5998c5 1.5px;
     border-radius: 2rem;
     flex-direction: column;
     font-family: Montserrat;
     font-size: 1.8rem;
-    color: #5998C5;
+    color: #5998c5;
     padding: 1rem;
   }
-  body .main .center .hero p {
+  .main .center .hero p {
     text-align: center;
   }
-  body .main .center .hero p span {
+  .main .center .hero p span {
     font-weight: 500;
   }
-  body .main .center .hero a {
+  .main .center .hero a {
     align-self: center;
     padding: 0;
     margin: 1rem;
@@ -256,170 +399,78 @@ body .main {
     text-decoration: none;
     width: 22rem;
     height: 5rem;
-    background-color: #5998C5;
+    background-color: #5998c5;
     color: white;
     text-align: center;
   }
-  body .main .center .hero a p {
+  .main .center .hero a p {
     margin: 0;
     padding: 1.5rem;
   }
-  body .main .center .blank {
+  .main .center .blank {
     display: none;
   }
-  body .main footer {
+  .main footer {
     max-width: auto;
     display: flex;
     justify-content: center;
     margin: 0;
   }
-  body .main footer .btns {
+  .main footer .btns {
     bottom: 0;
     margin-top: 5.5rem;
   }
-  body .main footer .btns a {
+  .main footer .btns a {
     margin: 0 1rem;
   }
-  body .main footer .btns a i {
+  .main footer .btns a i {
     color: white;
   }
-  body .main footer img {
+  .main footer img {
     display: none;
   }
 }
-body header {
-  display: flex;
-  padding: 1rem 3rem;
-  justify-content: space-between;
-  align-items: center;
-  height: 32vh;
-  position: relative;
-}
-body header .img-profil {
-  width: 20rem;
-  height: 20rem;
-  position: relative;
-}
-body header .img-profil img {
-  height: 100%;
-  width: 100%;
-  border-radius: 15rem;
-  border: 1.5px solid #E5E5E5;
-  position: absolute;
-}
-body header .img-profil a {
-  position: absolute;
-  text-decoration: none;
-  top: 0;
-  left: 15rem;
-  font-size: 3.5rem;
-}
-body header .title {
-  width: 40rem;
-  height: 13.8rem;
-  align-items: center;
-  text-align: center;
-}
-body header .title h1 {
-  font-family: Source Code Pro;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 3.6rem;
-  color: #EBEBEB;
-  margin: 0;
-}
-body header .title h2 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 3.6rem;
-  color: white;
-  margin: 5px;
-}
-body header .blank {
-  width: 20rem;
-}
-body .center {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 45vh;
-}
-body .center .codec {
-  width: 46rem;
-  height: 32rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-body .center .codec code {
-  padding: 3.5rem 0 2rem 3.5rem;
-  font-family: Source Code Pro;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 20px;
-  color: #FFFFFF;
-}
-body .center .codec code span {
-  color: Rgb(0, 23, 31);
-}
-body .center .hero {
-  width: 56rem;
-  height: auto;
-  background-color: #FFFFFF;
-  border: solid #5998C5 1.5px;
-  border-radius: 2rem;
-  flex-direction: column;
-  font-family: Montserrat;
-  font-size: 2rem;
-  color: #5998C5;
-  padding: 2rem;
-}
-body .center .hero p span {
-  font-weight: 500;
-}
-body .center .hero a {
-  display: block;
-  margin: 1rem;
-  margin-left: 22%;
-  text-decoration: none;
-  width: 25rem;
-  height: 5rem;
-  background-color: #5998C5;
-  color: white;
-  text-align: center;
-}
-body .center .hero a p {
-  margin: 0;
-  padding: 1rem;
-  font-family: Source Code Pro;
-}
-body .center .blank {
-  width: 43rem;
-}
-body footer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  height: 20vh;
-}
-body footer .btns {
-  margin-top: 3rem;
-}
-body footer .btns a {
-  margin: 0 4rem;
-}
-body footer .btns a i {
-  text-decoration: none;
-  color: #5998C5;
-  padding: 1rem;
-  font-size: 4.5rem;
-}
-body footer img {
-  bottom: 0;
-  right: 0;
-  width: 26%;
-  position: absolute;
+@media screen and (min-width: 575px) and (max-width: 990px) and (orientation: landscape) {
+  .main {
+    height: auto;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    position: relative;
+  }
+  .main header {
+    padding: 0.2rem;
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+  .main header .img-profil {
+    margin-left: 1rem;
+    width: 20rem;
+  }
+  .main header .img-profil img {
+    width: 100%;
+  }
+  .main header .title {
+    padding: 1rem;
+  }
+  .main header .title h2 {
+    margin: 0;
+  }
+  .main .center {
+    display: none;
+  }
+  .main footer {
+    height: 40vh;
+  }
+  .main footer .btns a .icon-github {
+    color: white;
+  }
+  .main footer img {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

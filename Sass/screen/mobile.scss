@@ -1,0 +1,217 @@
+@media screen and (max-width: 575px) and (orientation: portrait) {
+    .main {
+        height: auto;
+        width: auto;
+        background-image: url(../img/FONDTABLETTE.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+        position: relative;
+
+        header {
+            padding: 1rem 2rem;
+            width: auto;
+            height: auto;
+            position: relative;
+
+            .img-profil {
+                width: 12rem;
+                height: 12rem;
+                position: relative;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 15rem;
+                    border: 2px solid #5998c5;
+                }
+                a {
+                    position: absolute;
+                    top: 0;
+                    left: 8rem;
+                    font-size: 2.5rem;
+                }
+            }
+
+            .title {
+                display: flex;
+                width: 55%;
+                height: 7rem;
+                flex-direction: column;
+                padding: 1rem 0;
+                background-color: white;
+                border-radius: 1rem;
+                margin: 0;
+
+                h1 {
+                    width: 20rem;
+                    font-size: 2rem;
+                    color: Rgb(0, 23, 31);
+                    margin: 0;
+                }
+
+                h2 {
+                    width: 20rem;
+                    font-size: 2rem;
+                    color: #5998c5;
+                    margin: 0;
+                }
+            }
+
+            .blank {
+                display: none;
+            }
+        }
+
+        .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 80%;
+            overflow-y: auto;
+            .codec {
+                height: 25rem;
+                width: auto;
+
+                code {
+                    padding: 0;
+                    margin: 0rem 2rem 0 2rem;
+                    font-family: Source Code Pro;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 20px;
+                    color: #5998c5;
+
+                    span {
+                        color: Rgb(0, 23, 31);
+                    }
+                }
+            }
+
+            .hero {
+                margin: 2rem 2rem;
+                height: auto;
+                width: 35rem;
+                background-color: #ffffff;
+                border: solid #5998c5 1.5px;
+                border-radius: 2rem;
+                flex-direction: column;
+                font-family: Montserrat;
+                font-size: 1.8rem;
+                color: #5998c5;
+                padding: 1rem;
+
+                p {
+                    text-align: center;
+
+                    span {
+                        font-weight: 500;
+                    }
+                }
+
+                a {
+                    align-self: center;
+                    padding: 0;
+                    margin: 1rem;
+                    margin-left: 17%;
+                    text-decoration: none;
+                    width: 22rem;
+                    height: 5rem;
+                    background-color: #5998c5;
+                    color: white;
+                    text-align: center;
+
+                    p {
+                        margin: 0;
+                        padding: 1.5rem;
+                    }
+                }
+            }
+            .blank {
+                display: none;
+            }
+        }
+
+        footer {
+            max-width: auto;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+
+            .btns {
+                bottom: 0;
+                margin-top: 5.5rem;
+
+                a {
+                    margin: 0 1rem;
+
+                    i {
+                        color: white;
+                    }
+                }
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 575px) and (max-width: 990px) and (orientation: landscape) {
+    .main {
+        
+            height: auto;
+            width: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto;
+            position: relative;
+        header {
+            
+            padding: 0.2rem;
+            width: auto;
+            height: auto;
+            position: relative;
+
+            .img-profil {
+                margin-left: 1rem;
+                width: 20rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .title {
+                padding: 1rem;
+                h2 {
+                    margin: 0;
+                }
+            }
+        }
+
+        .center {
+            display: none;
+        }
+
+        footer {
+            height: 40vh;
+
+            .btns {
+                a {
+                    .icon-github {
+                        color: white;
+                    }
+                }
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+}

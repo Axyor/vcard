@@ -1,0 +1,167 @@
+.main {
+    max-width: auto;
+    height: 100vh;
+    min-height: 100vh;
+    background-image: url(../img/FONDDESKTOP2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    position: relative;
+    header {
+        display: flex;
+        padding: 1rem 3rem;
+        justify-content: space-between;
+        align-items: center;
+        height: 32vh;
+        position: relative;
+
+        .img-profil {
+            width: 20rem;
+            height: 20rem;
+            position: relative;
+
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 15rem;
+                border: 1.5px solid #e5e5e5;
+                position: absolute;
+            }
+            a {
+                position: absolute;
+                text-decoration: none;
+                top: 0;
+                left: 15rem;
+
+                font-size: 3.5rem;
+            }
+        }
+
+        .title {
+            width: 40rem;
+            height: 13.8rem;
+            align-items: center;
+            text-align: center;
+
+            h1 {
+                font-family: Source Code Pro;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 3.6rem;
+                color: #ebebeb;
+                margin: 0;
+            }
+
+            h2 {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 3.6rem;
+                color: white;
+                margin: 5px;
+            }
+        }
+
+        .blank {
+            width: 20rem;
+        }
+    }
+
+    .center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 45vh;
+
+        .codec {
+            width: 46rem;
+            height: 32rem;
+            display: flex;
+            flex-wrap: wrap;
+
+            code {
+                padding: 3.5rem 0 2rem 3.5rem;
+                font-family: Source Code Pro;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 20px;
+                color: #ffffff;
+
+                span {
+                    color: Rgb(0, 23, 31);
+                }
+            }
+        }
+        .hero {
+            width: 56rem;
+            height: auto;
+            background-color: #ffffff;
+            border: solid #5998c5 1.5px;
+            border-radius: 2rem;
+            flex-direction: column;
+            font-family: Montserrat;
+            font-size: 2rem;
+            color: #5998c5;
+            padding: 2rem;
+
+            p {
+                span {
+                    font-weight: 500;
+                }
+            }
+
+            a {
+                display: block;
+                margin: 1rem;
+                margin-left: 22%;
+                text-decoration: none;
+                width: 25rem;
+                height: 5rem;
+                background-color: #5998c5;
+                color: white;
+                text-align: center;
+
+                p {
+                    margin: 0;
+                    padding: 1rem;
+                    font-family: Source Code Pro;
+                }
+            }
+        }
+
+        .blank {
+            width: 43rem;
+        }
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 20vh;
+
+        .btns {
+            margin-top: 3rem;
+
+            a {
+                margin: 0 4rem;
+
+                i {
+                    text-decoration: none;
+                    color: #5998c5;
+                    padding: 1rem;
+                    font-size: 4.5rem;
+                }
+            }
+        }
+
+        img {
+            bottom: 0;
+            right: 0;
+            width: 26%;
+            position: absolute;
+        }
+    }
+}
