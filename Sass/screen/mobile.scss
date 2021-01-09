@@ -1,10 +1,11 @@
 @media screen and (max-width: 575px) and (orientation: portrait) {
     .main {
-        height: auto;
+        height: 82rem;
         width: auto;
-        background-image: url(../img/FONDTABLETTE.svg);
+        background-image: url(/img/FONDMOBILE.svg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size:150vh;
+        
         background-position: center;
         margin: 0 auto;
         position: relative;
@@ -30,7 +31,7 @@
                     position: absolute;
                     top: 0;
                     left: 8rem;
-                    font-size: 2.5rem;
+                    font-size: 2rem;
                 }
             }
 
@@ -68,7 +69,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 80%;
+            height: auto;
             overflow-y: auto;
             .codec {
                 height: 25rem;
@@ -135,20 +136,22 @@
         }
 
         footer {
-            max-width: auto;
+            
             display: flex;
             justify-content: center;
             margin: 0;
+            height: auto;
 
             .btns {
-                bottom: 0;
-                margin-top: 5.5rem;
+                
+                margin-top: 0;
 
                 a {
                     margin: 0 1rem;
 
                     i {
                         color: white;
+                        font-size: 4rem;
                     }
                 }
             }
@@ -170,25 +173,51 @@
             background-position: center;
             margin: 0 auto;
             position: relative;
+            background-image: url(/img/FONDDESKTOP2.svg);
         header {
             
-            padding: 0.2rem;
+            padding: 1rem;
             width: auto;
-            height: auto;
+            height:50vh;
             position: relative;
 
             .img-profil {
                 margin-left: 1rem;
-                width: 20rem;
+                width: 17rem;
+                height: 17rem;
 
                 img {
                     width: 100%;
                 }
+                a {
+                    position: absolute;
+                    top: 0;
+                    left: 12rem;
+                    font-size: 2.2rem;
+                }
             }
 
             .title {
-                padding: 1rem;
+                margin: 1rem;
+                display: flex;
+                width: 30rem;
+                height: 7rem;
+                flex-direction: column;
+                padding: 1rem 0;
+                background-color: white;
+                border-radius: 1rem;
+                margin: 0;
+                h1 {
+                    width: 20rem;
+                    font-size: 2.2rem;
+                    color: Rgb(0, 23, 31);
+                    margin: 0;
+                }
+
                 h2 {
+                    width: 20rem;
+                    font-size: 2rem;
+                    color: #5998c5;
                     margin: 0;
                 }
             }
@@ -199,9 +228,10 @@
         }
 
         footer {
-            height: 40vh;
-
+            height: 50vh;
+            padding: 1rem;
             .btns {
+                margin-top: 5rem;
                 a {
                     .icon-github {
                         color: white;
